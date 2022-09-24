@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143B18BB28DC21B50011A214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18BA28DC21B50011A214 /* AppDelegate.swift */; };
+		143B18BD28DC21B50011A214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18BC28DC21B50011A214 /* SceneDelegate.swift */; };
+		143B18BF28DC21B50011A214 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18BE28DC21B50011A214 /* CallsViewController.swift */; };
+		143B18C228DC21B50011A214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143B18C028DC21B50011A214 /* Main.storyboard */; };
+		143B18C428DC21B70011A214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143B18C328DC21B70011A214 /* Assets.xcassets */; };
+		143B18C728DC21B70011A214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143B18C528DC21B70011A214 /* LaunchScreen.storyboard */; };
+		143B18D128DC22C20011A214 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18D028DC22C20011A214 /* ProviderDelegate.swift */; };
+		143B18D328DC26C10011A214 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18D228DC26C10011A214 /* Call.swift */; };
+		143B18D528DC29840011A214 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18D428DC29830011A214 /* CallManager.swift */; };
+		143B18D728DC2B320011A214 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18D628DC2B320011A214 /* Audio.swift */; };
+		143B18D928DC2C3D0011A214 /* NewCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18D828DC2C3D0011A214 /* NewCallViewController.swift */; };
+		143B18DB28DC2D090011A214 /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18DA28DC2D090011A214 /* CallTableViewCell.swift */; };
+		143B18E328DC2D580011A214 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B18E228DC2D580011A214 /* CallDirectoryHandler.swift */; };
+		143B18E728DC2D580011A214 /* HotlineDirectory.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 143B18E028DC2D580011A214 /* HotlineDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		143B18F028DC46740011A214 /* Ring1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 143B18EE28DC46740011A214 /* Ring1.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		143B18E528DC2D580011A214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143B18AF28DC21B40011A214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143B18DF28DC2D580011A214;
+			remoteInfo = HotlineDirectory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		143B18EB28DC2D580011A214 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				143B18E728DC2D580011A214 /* HotlineDirectory.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		143B18B728DC21B50011A214 /* Incoming and Outgoing Calls Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incoming and Outgoing Calls Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		143B18BA28DC21B50011A214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		143B18BC28DC21B50011A214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		143B18BE28DC21B50011A214 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		143B18C128DC21B50011A214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		143B18C328DC21B70011A214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		143B18C628DC21B70011A214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		143B18C828DC21B70011A214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143B18D028DC22C20011A214 /* ProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		143B18D228DC26C10011A214 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		143B18D428DC29830011A214 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		143B18D628DC2B320011A214 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		143B18D828DC2C3D0011A214 /* NewCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallViewController.swift; sourceTree = "<group>"; };
+		143B18DA28DC2D090011A214 /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
+		143B18E028DC2D580011A214 /* HotlineDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HotlineDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		143B18E228DC2D580011A214 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		143B18E428DC2D580011A214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143B18EE28DC46740011A214 /* Ring1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ring1.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143B18B428DC21B50011A214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143B18DD28DC2D580011A214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143B18AE28DC21B40011A214 = {
+			isa = PBXGroup;
+			children = (
+				143B18B928DC21B50011A214 /* Incoming and Outgoing Calls Demo */,
+				143B18E128DC2D580011A214 /* HotlineDirectory */,
+				143B18B828DC21B50011A214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		143B18B828DC21B50011A214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143B18B728DC21B50011A214 /* Incoming and Outgoing Calls Demo.app */,
+				143B18E028DC2D580011A214 /* HotlineDirectory.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143B18B928DC21B50011A214 /* Incoming and Outgoing Calls Demo */ = {
+			isa = PBXGroup;
+			children = (
+				143B18EC28DC465C0011A214 /* Ringtones */,
+				143B18CE28DC229F0011A214 /* Classes */,
+				143B18BA28DC21B50011A214 /* AppDelegate.swift */,
+				143B18BC28DC21B50011A214 /* SceneDelegate.swift */,
+				143B18D828DC2C3D0011A214 /* NewCallViewController.swift */,
+				143B18BE28DC21B50011A214 /* CallsViewController.swift */,
+				143B18C028DC21B50011A214 /* Main.storyboard */,
+				143B18C328DC21B70011A214 /* Assets.xcassets */,
+				143B18C528DC21B70011A214 /* LaunchScreen.storyboard */,
+				143B18C828DC21B70011A214 /* Info.plist */,
+			);
+			path = "Incoming and Outgoing Calls Demo";
+			sourceTree = "<group>";
+		};
+		143B18CE28DC229F0011A214 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				143B18D028DC22C20011A214 /* ProviderDelegate.swift */,
+				143B18D228DC26C10011A214 /* Call.swift */,
+				143B18D428DC29830011A214 /* CallManager.swift */,
+				143B18D628DC2B320011A214 /* Audio.swift */,
+				143B18DA28DC2D090011A214 /* CallTableViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		143B18E128DC2D580011A214 /* HotlineDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				143B18E228DC2D580011A214 /* CallDirectoryHandler.swift */,
+				143B18E428DC2D580011A214 /* Info.plist */,
+			);
+			path = HotlineDirectory;
+			sourceTree = "<group>";
+		};
+		143B18EC28DC465C0011A214 /* Ringtones */ = {
+			isa = PBXGroup;
+			children = (
+				143B18EE28DC46740011A214 /* Ring1.mp3 */,
+			);
+			path = Ringtones;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143B18B628DC21B50011A214 /* Incoming and Outgoing Calls Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143B18CB28DC21B70011A214 /* Build configuration list for PBXNativeTarget "Incoming and Outgoing Calls Demo" */;
+			buildPhases = (
+				143B18B328DC21B50011A214 /* Sources */,
+				143B18B428DC21B50011A214 /* Frameworks */,
+				143B18B528DC21B50011A214 /* Resources */,
+				143B18EB28DC2D580011A214 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143B18E628DC2D580011A214 /* PBXTargetDependency */,
+			);
+			name = "Incoming and Outgoing Calls Demo";
+			productName = "Incoming and Outgoing Calls Demo";
+			productReference = 143B18B728DC21B50011A214 /* Incoming and Outgoing Calls Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		143B18DF28DC2D580011A214 /* HotlineDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143B18E828DC2D580011A214 /* Build configuration list for PBXNativeTarget "HotlineDirectory" */;
+			buildPhases = (
+				143B18DC28DC2D580011A214 /* Sources */,
+				143B18DD28DC2D580011A214 /* Frameworks */,
+				143B18DE28DC2D580011A214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotlineDirectory;
+			productName = HotlineDirectory;
+			productReference = 143B18E028DC2D580011A214 /* HotlineDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143B18AF28DC21B40011A214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					143B18B628DC21B50011A214 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					143B18DF28DC2D580011A214 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 143B18B228DC21B40011A214 /* Build configuration list for PBXProject "Incoming and Outgoing Calls Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 143B18AE28DC21B40011A214;
+			productRefGroup = 143B18B828DC21B50011A214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143B18B628DC21B50011A214 /* Incoming and Outgoing Calls Demo */,
+				143B18DF28DC2D580011A214 /* HotlineDirectory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143B18B528DC21B50011A214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143B18F028DC46740011A214 /* Ring1.mp3 in Resources */,
+				143B18C728DC21B70011A214 /* LaunchScreen.storyboard in Resources */,
+				143B18C428DC21B70011A214 /* Assets.xcassets in Resources */,
+				143B18C228DC21B50011A214 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143B18DE28DC2D580011A214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143B18B328DC21B50011A214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143B18DB28DC2D090011A214 /* CallTableViewCell.swift in Sources */,
+				143B18BF28DC21B50011A214 /* CallsViewController.swift in Sources */,
+				143B18BB28DC21B50011A214 /* AppDelegate.swift in Sources */,
+				143B18D328DC26C10011A214 /* Call.swift in Sources */,
+				143B18D928DC2C3D0011A214 /* NewCallViewController.swift in Sources */,
+				143B18D528DC29840011A214 /* CallManager.swift in Sources */,
+				143B18BD28DC21B50011A214 /* SceneDelegate.swift in Sources */,
+				143B18D128DC22C20011A214 /* ProviderDelegate.swift in Sources */,
+				143B18D728DC2B320011A214 /* Audio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143B18DC28DC2D580011A214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143B18E328DC2D580011A214 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		143B18E628DC2D580011A214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143B18DF28DC2D580011A214 /* HotlineDirectory */;
+			targetProxy = 143B18E528DC2D580011A214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		143B18C028DC21B50011A214 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143B18C128DC21B50011A214 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		143B18C528DC21B70011A214 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143B18C628DC21B70011A214 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		143B18C928DC21B70011A214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		143B18CA28DC21B70011A214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		143B18CC28DC21B70011A214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJLYNX25RX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Incoming and Outgoing Calls Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninesol.Incoming-and-Outgoing-Calls-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		143B18CD28DC21B70011A214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJLYNX25RX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Incoming and Outgoing Calls Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninesol.Incoming-and-Outgoing-Calls-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		143B18E928DC2D580011A214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJLYNX25RX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotlineDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HotlineDirectory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninesol.Incoming-and-Outgoing-Calls-Demo.HotlineDirectory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		143B18EA28DC2D580011A214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJLYNX25RX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotlineDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HotlineDirectory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninesol.Incoming-and-Outgoing-Calls-Demo.HotlineDirectory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143B18B228DC21B40011A214 /* Build configuration list for PBXProject "Incoming and Outgoing Calls Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143B18C928DC21B70011A214 /* Debug */,
+				143B18CA28DC21B70011A214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143B18CB28DC21B70011A214 /* Build configuration list for PBXNativeTarget "Incoming and Outgoing Calls Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143B18CC28DC21B70011A214 /* Debug */,
+				143B18CD28DC21B70011A214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143B18E828DC2D580011A214 /* Build configuration list for PBXNativeTarget "HotlineDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143B18E928DC2D580011A214 /* Debug */,
+				143B18EA28DC2D580011A214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 143B18AF28DC21B40011A214 /* Project object */;
+}
